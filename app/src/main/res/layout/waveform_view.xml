@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/waveformContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="24dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="4dp">
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/wave_bar_anim" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/wave_bar_anim" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/wave_bar_anim" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/wave_bar_anim" />
+
+</LinearLayout>

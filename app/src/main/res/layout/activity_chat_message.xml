@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Text Message -->
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello!"
+        android:textSize="16sp"
+
+        android:padding="10dp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Image Message -->
+    <ImageView
+        android:id="@+id/imageMessage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <!-- Voice Message -->
+    <LinearLayout
+        android:id="@+id/voiceMessageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/voice_message_bg"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_btn_speak_now" />
+
+        <TextView
+            android:id="@+id/playHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playing..."
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Timestamp -->
+    <TextView
+        android:id="@+id/textViewTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:45 AM"
+        android:textSize="10sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="2dp" />
+</LinearLayout>

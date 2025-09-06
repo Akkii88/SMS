@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="green_hacker">#00FF00</color>  <!-- Neon Green -->
+    <color name="dark_green">#008000</color>  <!-- Dark Green -->
+    <color name="neon_blue">#00FFFF</color>  <!-- Cyberpunk Blue -->
+    <color name="neon_green">#00FF00</color>
+    <color name="blue">#0069FF</color>
+    <color name="grey">#505050</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="red">#FF4444</color>
+    <color name="blood_red">#590101</color>
+    <color name="soft_red">#ED2B2B</color> <!-- Cyberpunk Blue -->
+</resources>

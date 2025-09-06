@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <!-- Faint Logo Background -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/gold"
+        android:alpha="0.1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Chat ID -->
+        <LinearLayout
+            android:id="@+id/chatIdContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="12dp"
+            android:padding="8dp"
+            android:background="@drawable/chat_id_bg"
+            android:layout_gravity="start"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/textViewChatID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat ID:"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/soft_red"
+                android:typeface="monospace"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/chatIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textSize="13sp"
+                android:textColor="@color/green_hacker"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <!-- Messages -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewChat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp" />
+
+        <!-- Mic + Status + Extra -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/buttonRecord"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@null"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_btn_speak_now" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Connected to Node: Berlin | Latency: 23ms"
+                android:textColor="@color/green_hacker"
+                android:textSize="11sp"
+                android:background="#101010"
+                android:padding="6dp"
+                android:typeface="monospace"
+                android:backgroundTint="@color/black"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical" />
+
+            <ImageButton
+                android:id="@+id/buttonExtra"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@null"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_view"
+                android:contentDescription="Extra" />
+        </LinearLayout>
+
+        <!-- Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:hint="Type a message..."
+                android:padding="10dp"
+                android:background="@android:drawable/edit_text"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:gravity="center_vertical"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="80dp"
+                android:text="Send"
+                android:background="@drawable/edittext_highlight"
+                android:textColor="@color/green_hacker"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

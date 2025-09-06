@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent"/> <!-- Transparent Background -->
+    <stroke android:width="2dp" android:color="@color/green_hacker"/> <!-- Subtle Neon Border -->
+    <corners android:radius="8dp"/> <!-- Slightly Rounded Corners -->
+</shape>
